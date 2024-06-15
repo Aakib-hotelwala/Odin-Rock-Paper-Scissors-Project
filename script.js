@@ -41,9 +41,9 @@ function playRound(humanChoice, computerChoice) {
     document.querySelector("#Score").innerText = `Player: ${humanScore} - Computer: ${computerScore}`;
 
     if (humanScore === 5){
-        document.querySelector("#result").innerText = "Congratulations! You won the game!";
+        document.querySelector("#result").innerText = "Congratulations! You won the game!\nPress reset to play again!";
     }else if(computerScore === 5){
-        document.querySelector("#result").innerText = "The Computer won the game!";
+        document.querySelector("#result").innerText = "The Computer won the game!\nPress reset to play again!";
     }
 }
 
@@ -55,21 +55,27 @@ function resetGame() {
 }
 
 document.querySelector("#Rock").addEventListener("click", () => {
-    let humanChoice = "Rock";
-    let computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice);
+    if(humanScore < 5 && computerScore < 5){
+        let humanChoice = "Rock";
+        let computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
 });
 
 document.querySelector("#Paper").addEventListener("click", () => {
-    let humanChoice = "Paper";
-    let computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice);
+    if(humanScore < 5 && computerScore < 5){
+        let humanChoice = "Paper";
+        let computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
 });
 
 document.querySelector("#Scissors").addEventListener("click", () => {
-    let humanChoice = "Scissors";
-    let computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice);
+    if(humanScore < 5 && computerScore < 5){
+        let humanChoice = "Scissors";
+        let computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
 });
 
 document.querySelector("#reset").addEventListener("click", resetGame);
