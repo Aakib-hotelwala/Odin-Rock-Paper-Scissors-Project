@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    color: white;
+    font-family: 'Times New Roman';
+    background-color: #571313;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+#Score {    
+    padding: 10px;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#result {
+    padding: 10px;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+#Rock, #Paper, #Scissors {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #571313;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+}
+
+#Rock img, #Paper img, #Scissors img {
+    width: 100%; 
+    height: 100%;
+}
+
+#Rock img:hover, #Paper img:hover, #Scissors img:hover {
+    opacity: 0.7;
+}
+
+#reset {
+    width: 180px;
+    overflow: hidden;
+    border: 3px solid black;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px 675px;
+    cursor: pointer;
+    margin: 10px auto -20px;
+}
+
+#reset img{
+    width: 180px;
+    height: 90px;
+}
+
+#reset img:hover{
+    opacity: 0.7;
+}
+
+#Footer {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 12px;
+    color: white;
+    background-color: black;
+}
